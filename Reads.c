@@ -454,8 +454,8 @@ int readAllReads(char *fileName1,
 	}
 	else
 	{
-		fprintf(stdout, "ERR: No reads can be found for mapping\n");
-		return 0;
+		fprintf(stdout, "ERR: No reads can be found for mapping, %d discarded\n", discarded);
+		return 1;
 	}
 
 
